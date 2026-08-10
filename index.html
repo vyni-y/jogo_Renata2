@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jornada da Renata</title>
+
+    <meta name="description" content="Jogo educativo sobre saúde sexual e métodos contraceptivos.">
+    <meta name="theme-color" content="#2196f3">
+
+    <!-- Instalação como app (PWA) -->
+    <link rel="manifest" href="manifest.json">
+    <link rel="icon" href="assets/icon-192.png">
+    <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <meta name="apple-mobile-web-app-title" content="Jornada da Renata">
+    <meta name="mobile-web-app-capable" content="yes">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div id="inicio" class="tela ativa">
+
+        <div class="container-inicio">
+
+            <h1>Jornada da Renata</h1>
+
+            <div class="personagem-box">
+
+                <img
+                    src="assets/renata.png"
+                    alt="Ilustração de Renata, personagem do jogo"
+                    class="personagem"
+                >
+
+                <div class="balao">
+
+                    <p>
+                        Olá! Meu nome é Renata.
+                    </p>
+
+                    <br>
+
+                    <p>
+                        Estou aprendendo sobre saúde sexual e métodos
+                        contraceptivos, mas tenho muitas dúvidas.
+                    </p>
+
+                    <br>
+
+                    <p>
+                        Você pode me ajudar a tomar decisões responsáveis
+                        durante esta jornada?
+                    </p>
+
+                </div>
+
+            </div>
+
+            <button
+                id="btnComecar"
+                class="btn-principal"
+            >
+                Começar Jornada
+            </button>
+
+        </div>
+
+    </div>
+
+    <div id="jogo" class="tela">
+
+        <header>
+
+            <h2>Jornada da Renata</h2>
+
+            <div class="info">
+
+                <div>
+                    Pontuação:
+                    <span id="pontuacao">0</span>
+                </div>
+
+                <div>
+                    Situação
+                    <span id="atual">1</span>
+                    de
+                    <span id="total">12</span>
+                </div>
+
+            </div>
+
+            <div
+                class="barra"
+                role="progressbar"
+                aria-label="Progresso na jornada"
+                aria-valuemin="0"
+                aria-valuemax="100"
+                aria-valuenow="0"
+                id="barraProgressoContainer"
+            >
+
+                <div
+                    id="barraProgresso"
+                    class="barra-preenchida"
+                ></div>
+
+            </div>
+
+        </header>
+
+        <main>
+
+            <section class="personagem-area">
+
+                <img
+                    src="assets/renata.png"
+                    alt="Ilustração de Renata, personagem do jogo"
+                    class="personagem"
+                >
+
+                <div class="balao" aria-live="polite">
+
+                    <p id="textoSituacao">
+                        Carregando situação...
+                    </p>
+
+                </div>
+
+            </section>
+
+            <section
+                id="alternativas"
+                class="alternativas"
+                aria-label="Alternativas de resposta"
+            >
+
+            </section>
+
+            <section
+                id="feedback"
+                class="feedback"
+                aria-live="assertive"
+                role="status"
+            >
+
+                <h3 id="tituloFeedback"></h3>
+
+                <p id="textoFeedback"></p>
+
+            </section>
+
+            <button
+                id="btnProxima"
+                class="btn-proxima"
+            >
+                Continuar
+            </button>
+
+        </main>
+
+    </div>
+
+    <!-- TELA FINAL -->
+    <div id="final" class="tela">
+
+        <div class="resultado">
+
+            <h1>Parabéns!</h1>
+
+            <img
+                src="assets/renata.png"
+                alt="Ilustração de Renata, personagem do jogo"
+                class="personagem-final"
+            >
+
+            <h2>Sua pontuação final foi:</h2>
+
+            <div
+                id="pontuacaoFinal"
+                class="pontuacao-final"
+            >
+                0 pontos
+            </div>
+
+            <div
+                id="mensagemFinal"
+                class="mensagem-final"
+            >
+            </div>
+
+            <button
+                id="btnReiniciar"
+                class="btn-principal"
+            >
+                Jogar Novamente
+            </button>
+
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
