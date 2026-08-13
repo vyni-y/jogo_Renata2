@@ -7,6 +7,7 @@ const ARQUIVOS_PARA_CACHE = [
     "./script.js",
     "./manifest.json",
     "./assets/renata.png",
+    "./assets/ficha-catalografica.png",
     "./assets/icon-192.png",
     "./assets/icon-512.png"
 ];

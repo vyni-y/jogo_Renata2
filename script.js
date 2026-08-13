@@ -2,6 +2,9 @@
 // ELEMENTOS
 // ======================
 
+const telaCapa = document.getElementById("capa");
+const btnContinuarCapa = document.getElementById("btnContinuarCapa");
+
 const telaInicio = document.getElementById("inicio");
 const telaJogo = document.getElementById("jogo");
 const telaFinal = document.getElementById("final");
@@ -290,6 +293,13 @@ const cenas = {
 
 totalEl.textContent = "12";
 
+
+btnContinuarCapa.addEventListener("click", () => {
+
+    telaCapa.classList.remove("ativa");
+    telaInicio.classList.add("ativa");
+
+});
 
 btnComecar.addEventListener("click", () => {
 

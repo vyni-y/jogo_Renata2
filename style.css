@@ -45,6 +45,39 @@ button:focus-visible{
 }
 
 /* =========================
+   TELA DE CAPA
+========================= */
+
+#capa.ativa{
+    justify-content: center;
+    align-items: center;
+}
+
+.container-capa{
+    width: 90%;
+    max-width: 700px;
+    background: white;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 5px 20px rgba(0,0,0,.1);
+    text-align: center;
+}
+
+.container-capa h1{
+    color: #2196f3;
+    margin-bottom: 30px;
+    font-size: 42px;
+}
+
+.ficha-catalografica{
+    max-width: 100%;
+    width: 420px;
+    border: 1px solid #cfd8dc;
+    border-radius: 8px;
+    margin-bottom: 30px;
+}
+
+/* =========================
    TELA INICIAL
 ========================= */
 
